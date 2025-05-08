@@ -12,6 +12,7 @@ int main(int argc, char* argv[])
         exit(1);
         }
     while ((c=getchar()) != EOF) {
+    	if (c == '\n') continue;
         i =(int)(c-'0');
         if(i>=0 && i<=5){
                 j=(float)i/(float)5;//1
